@@ -21,7 +21,7 @@ public class User {
     private Long id;
 
     @Column(unique = true)
-    private String githubId;
+    private Integer githubId;
     private String login;
     private String avatarUrl;
 }

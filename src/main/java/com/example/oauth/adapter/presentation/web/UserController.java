@@ -19,7 +19,7 @@ public class UserController {
 
     @GetMapping("/user")
     public ResponseEntity<UserResponse> user(@AuthenticationPrincipal OAuth2User principal) {
-        String githubId = principal.getAttribute("id");
+        Integer githubId = principal.getAttribute("id");
         String login = principal.getAttribute("login");
         String avatarUrl = principal.getAttribute("avatar_url");
 

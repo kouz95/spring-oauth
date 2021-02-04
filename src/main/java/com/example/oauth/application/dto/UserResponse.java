@@ -8,7 +8,7 @@ import lombok.RequiredArgsConstructor;
 @RequiredArgsConstructor
 public class UserResponse {
     private final Long id;
-    private final String githubId;
+    private final Integer githubId;
     private final String login;
     private final String avatarUrl;
 
